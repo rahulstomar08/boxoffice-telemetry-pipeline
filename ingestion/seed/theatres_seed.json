@@ -1,0 +1,177 @@
+[
+  {
+    "theatre_id": "th_del_pvr_saket_01",
+    "theatre_name": "PVR Select Citywalk",
+    "chain_name": "PVR INOX",
+    "city_code": "DEL",
+    "city_name": "Delhi NCR",
+    "sub_zone": "South Delhi",
+    "is_single_screen": false,
+    "offline_multiplier_weight": 1.08,
+    "screens": [
+      {
+        "screen_id": "scr_saket_imax_01",
+        "screen_name": "Audi 1 - IMAX",
+        "format": "IMAX 2D",
+        "seat_categories": [
+          {
+            "category_name": "Classic",
+            "base_price_inr": 350.00,
+            "total_seats": 80
+          },
+          {
+            "category_name": "Prime",
+            "base_price_inr": 480.00,
+            "total_seats": 140
+          },
+          {
+            "category_name": "Recliner",
+            "base_price_inr": 850.00,
+            "total_seats": 24
+          }
+        ]
+      },
+      {
+        "screen_id": "scr_saket_reg_02",
+        "screen_name": "Audi 2 - Premiere",
+        "format": "Regular 2D",
+        "seat_categories": [
+          {
+            "category_name": "Classic",
+            "base_price_inr": 250.00,
+            "total_seats": 60
+          },
+          {
+            "category_name": "Prime",
+            "base_price_inr": 320.00,
+            "total_seats": 110
+          },
+          {
+            "category_name": "Recliner",
+            "base_price_inr": 650.00,
+            "total_seats": 16
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "theatre_id": "th_del_delite_02",
+    "theatre_name": "Delite Cinema",
+    "chain_name": "Indie Single Screen",
+    "city_code": "DEL",
+    "city_name": "Delhi NCR",
+    "sub_zone": "Central Delhi",
+    "is_single_screen": true,
+    "offline_multiplier_weight": 1.35,
+    "screens": [
+      {
+        "screen_id": "scr_delite_main_01",
+        "screen_name": "Main Auditorium",
+        "format": "Regular 2D",
+        "seat_categories": [
+          {
+            "category_name": "Stall",
+            "base_price_inr": 90.00,
+            "total_seats": 250
+          },
+          {
+            "category_name": "Lower Balcony",
+            "base_price_inr": 150.00,
+            "total_seats": 200
+          },
+          {
+            "category_name": "Upper Balcony",
+            "base_price_inr": 220.00,
+            "total_seats": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "theatre_id": "th_blr_pvr_orion_01",
+    "theatre_name": "PVR Orion Mall",
+    "chain_name": "PVR INOX",
+    "city_code": "BLR",
+    "city_name": "Bengaluru",
+    "sub_zone": "Rajajinagar",
+    "is_single_screen": false,
+    "offline_multiplier_weight": 1.08,
+    "screens": [
+      {
+        "screen_id": "scr_orion_imax_01",
+        "screen_name": "Audi 1 - IMAX",
+        "format": "IMAX 2D",
+        "seat_categories": [
+          {
+            "category_name": "Classic",
+            "base_price_inr": 320.00,
+            "total_seats": 90
+          },
+          {
+            "category_name": "Prime",
+            "base_price_inr": 450.00,
+            "total_seats": 160
+          },
+          {
+            "category_name": "Recliner",
+            "base_price_inr": 750.00,
+            "total_seats": 20
+          }
+        ]
+      },
+      {
+        "screen_id": "scr_orion_4dx_02",
+        "screen_name": "Audi 2 - 4DX",
+        "format": "4DX",
+        "seat_categories": [
+          {
+            "category_name": "4DX Standard",
+            "base_price_inr": 420.00,
+            "total_seats": 64
+          },
+          {
+            "category_name": "4DX Prime",
+            "base_price_inr": 520.00,
+            "total_seats": 48
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "theatre_id": "th_blr_urvashi_02",
+    "theatre_name": "Urvashi Cinema",
+    "chain_name": "Indie Single Screen",
+    "city_code": "BLR",
+    "city_name": "Bengaluru",
+    "sub_zone": "Lalbagh Road",
+    "is_single_screen": true,
+    "offline_multiplier_weight": 1.35,
+    "screens": [
+      {
+        "screen_id": "scr_urvashi_main_01",
+        "screen_name": "Main Dolby 4K Hall",
+        "format": "Regular 2D",
+        "seat_categories": [
+          {
+            "category_name": "Second Class",
+            "base_price_inr": 100.00,
+            "total_seats": 350
+          },
+          {
+            "category_name": "First Class",
+            "base_price_inr": 180.00,
+            "total_seats": 350
+          },
+          {
+            "category_name": "Gold Balcony",
+            "base_price_inr": 250.00,
+            "total_seats": 200
+          }
+        ]
+      }
+    ]
+  }
+]
