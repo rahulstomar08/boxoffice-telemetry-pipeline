@@ -51,6 +51,18 @@ services:
         - spark_ivy_cache:/root/.ivy2
       entrypoint: ["/bin/bash", "-c", "tail -f /dev/null"]
 
+  postgres_warehouse:
+      image: postgres:16
+      container_name: postgres_warehouse
+      environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: password123
+      ports:
+        - "5432:5432"
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+
 volumes:
   minio_data:
   spark_ivy_cache:
+  postgres_data:
