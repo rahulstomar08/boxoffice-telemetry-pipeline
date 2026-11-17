@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: boxoffice_raw
+    schema: public
+    tables:
+      - name: staging_seat_snapshots
+        description: "Raw dual-sink upsert table from PySpark Silver streaming job."

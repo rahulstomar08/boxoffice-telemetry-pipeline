@@ -1,0 +1,4 @@
+theatre_id,theatre_name,chain_name,city_code,sub_zone,is_single_screen,offline_multiplier_weight
+th_blr_pvr_orion_01,PVR Orion Mall,PVR INOX,BLR,Rajajinagar,false,1.08
+th_del_delite_02,Delite Cinema,Indie,DEL,Asaf Ali Road,true,1.35
+th_del_pvr_saket_01,PVR Select Citywalk,PVR INOX,DEL,Saket,false,1.08

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_daily_box_office
+    description: "Daily aggregated net and gross box office collections per show."
+    columns:
+      - name: show_id
+        description: "Unique identifier for the movie show."
+        tests:
+          - unique
+          - not_null
+
+      - name: total_india_net_inr
+        description: "Final net collection after offline multipliers and GST deduction."
+        tests:
+          - not_null
+
+      - name: total_est_gross_inr
+        description: "Estimated gross including offline walk-ins."
+        tests:
+          - not_null
