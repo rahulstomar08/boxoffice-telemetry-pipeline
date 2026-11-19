@@ -5,6 +5,8 @@ WITH raw_snapshots AS (
 SELECT
     dedup_hash,
     CAST(show_id AS VARCHAR(128)) AS show_id,
+    CAST(movie_id AS VARCHAR(64)) AS movie_id,
+    CAST(theatre_id AS VARCHAR(64)) AS theatre_id,
     CAST(city_code AS VARCHAR(10)) AS city_code,
     CAST(snapshot_window AS VARCHAR(20)) AS snapshot_window,
     CAST(category_name AS VARCHAR(54)) AS category_name,

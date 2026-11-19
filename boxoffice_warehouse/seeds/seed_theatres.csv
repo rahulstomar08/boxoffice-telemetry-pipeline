@@ -1,0 +1,5 @@
+theatre_id,theatre_name,chain_name,city_code,sub_zone,is_single_screen,offline_multiplier_weight,total_capacity
+th_blr_pvr_orion_01,PVR Orion Mall,PVR INOX,BLR,Rajajinagar,false,1.08,191
+th_blr_urvashi_02,Urvashi Cinema,Indie Single Screen,BLR,Lalbagh Road,true,1.35,900
+th_del_pvr_saket_01,PVR Select Citywalk,PVR INOX,DEL,South Delhi,false,1.08,215
+th_del_delite_02,Delite Cinema,Indie Single Screen,DEL,Central Delhi,true,1.35,600

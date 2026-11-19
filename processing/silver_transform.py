@@ -146,24 +146,28 @@ def run_silver_stream():
         # The Idempotent Upsert Query (ON CONFLICT DO UPDATE)
         insert_query = """
             INSERT INTO staging_seat_snapshots (
-                dedup_hash, show_id, city_code, snapshot_window, category_name, 
-                base_price_inr, booked_seats, tracked_gross_inr
+                dedup_hash, show_id, movie_id, theatre_id, city_code,
+                snapshot_window, category_name, base_price_inr,
+                booked_seats, tracked_gross_inr
             ) VALUES %s
             ON CONFLICT (dedup_hash) DO UPDATE SET
+                movie_id = EXCLUDED.movie_id,
+                theatre_id = EXCLUDED.theatre_id,
                 booked_seats = EXCLUDED.booked_seats,
                 tracked_gross_inr = EXCLUDED.tracked_gross_inr,
                 updated_at = CURRENT_TIMESTAMP;
         """
         
-        # Calculate tracked_gross_inr on the fly and prepare data tuples
         data = [
             (
-                row.dedup_hash, 
-                row.show_id, 
-                row.city_code, 
+                row.dedup_hash,
+                row.show_id,
+                row.movie_id,
+                row.theatre_id,
+                row.city_code,
                 row.snapshot_window,
-                row.category_name, 
-                row.base_price_inr, 
+                row.category_name,
+                row.base_price_inr,
                 row.booked_seats,
                 float(row.base_price_inr * row.booked_seats)
             ) for row in rows
